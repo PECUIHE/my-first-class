@@ -1,24 +1,24 @@
 import React, { useState } from 'react'
 import { LuMenu, LuX } from 'react-icons/lu'
-import { Link, NavLink } from 'react-router-dom'
+// import { Link, NavLink } from 'react-router-dom'
 // import "./Navbar.css"
 
 
 
 
-const NavLinks = () => {
-  return (
-    <>
-      <NavLink to="/about">
-        About
-      </NavLink>
+// const NavLinks = () => {
+//   return (
+//     <>
+//       <NavLink to="/about">
+//         About
+//       </NavLink>
 
-      <NavLink to="/blog">
-        Blog
-      </NavLink>
-    </>
-  );
-};
+//       <NavLink to="/blog">
+//         Blog
+//       </NavLink>
+//     </>
+//   );
+// };
 
 
 
@@ -31,9 +31,9 @@ function Navbar() {
   return (
     <div className='container mx-auto py-3'>
       <div className=' flex justify-between items-center'>
-        <Link to="/" className='uppercase font-bold text-xl'>
+        {/* <Link to="/" className='uppercase font-bold text-xl'>
           pecuihe
-        </Link>
+        </Link> */}
 
         {/* <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -50,7 +50,7 @@ function Navbar() {
             <NavLinks />
           </div> */}
 
-          <ul className={isNavOpen ? "open" : ""}>
+          {/* <ul className={isNavOpen ? "open" : ""}>
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
@@ -60,7 +60,7 @@ function Navbar() {
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
-          </ul>
+          </ul> */}
     
 
 
