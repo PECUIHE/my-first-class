@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+
+.pet {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.petname {
+  color: green;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.year {
+  color: blue;
+  font-weight: bold;
+}
+
+.skill {
+  color: orangered;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navOpen {
+  background-color: aquamarine;
+display: block;
+position: absolute;
+z-index: 1;
+width: 50%;
+height: 80vh;
+top: 0;
+left: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.navClose {
+  display: none;
+}
+
+/* .navigation-container {
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+/* .logo a {
+  color:
+  text-decoration: none;
+} */
+
+/* nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+.nav-li {
+  list-style: none;
+}
+
+.nav-li a {
+  display: block;
+  color: ;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  nav .menu {
+      display: flex;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  nav {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+      display: flex;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: center;
+  }
+
+  nav ul li a {
+      margin: 0.2rem 0.5rem;
+  }
+} */
+
+/* .cards {
+  border: 2px solid;
+  margin: 1rem 0;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+} */
 
-.App-link {
-  color: #61dafb;
-}
+/* .card-container {
+  border: 1px solid blue;
+  margin: 0 1rem;
+  
+} */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* .card-details {
+  margin: 1rem;
+  border: 1px solid red;
+} */
+
