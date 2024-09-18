@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { LuMenu, LuX } from 'react-icons/lu'
+import { Link, NavLink } from 'react-router-dom'
 // import { Link, NavLink } from 'react-router-dom'
 // import "./Navbar.css"
 
@@ -9,11 +10,23 @@ import { LuMenu, LuX } from 'react-icons/lu'
 // const NavLinks = () => {
 //   return (
 //     <>
-//       <NavLink to="/about">
+//       <NavLink to="/" activeClassName="active">
+//         Home
+//       </NavLink>
+
+//       <NavLink to="/about" activeClassName="active">
 //         About
 //       </NavLink>
 
-//       <NavLink to="/blog">
+//       <NavLink to="/books" activeClassName="active">
+//         Books
+//       </NavLink>
+
+//       <NavLink to="/contact" activeClassName="active">
+//         Contact
+//       </NavLink>
+
+//       <NavLink to="/blog" activeClassName="active">
 //         Blog
 //       </NavLink>
 //     </>
@@ -31,9 +44,9 @@ function Navbar() {
   return (
     <div className='container mx-auto py-3'>
       <div className=' flex justify-between items-center'>
-        {/* <Link to="/" className='uppercase font-bold text-xl'>
-          pecuihe
-        </Link> */}
+        <Link to="/" className='uppercase font-bold text-xl'>
+          Pecuihe
+        </Link>
 
         {/* <div className='menu' onClick={() => setMenuOpen(!menuOpen)}>
           <span></span>
@@ -46,11 +59,34 @@ function Navbar() {
         <nav>
           {/*DESKTOP VIEW*/}
 
-          {/* <div className='hidden justify-end md:flex'>
-            <NavLinks />
-          </div> */}
+          <div className='hidden w-full justify-end md:flex gap-6'>
+            <ul>
+              <li className='hidden w-full justify-end md:flex gap-6'>
+                <NavLink to="/" activeClassName="active">
+                  Home
+                </NavLink>
 
-          {/* <ul className={isNavOpen ? "open" : ""}>
+                <NavLink to="/about" activeClassName="active">
+                  About
+                </NavLink>
+
+                <NavLink to="/books" activeClassName="active">
+                  Books
+                </NavLink>
+                <NavLink to="/contact" activeClassName="active">
+                  Contact
+                </NavLink>
+                <NavLink to="/blog" activeClassName="active">
+                  Blog
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+
+          {/* <ul className={isNavOpen ? "navOpen" : "navClose"}>
+            <li>
+              <NavLink to="/" >Home</NavLink>
+            </li>
             <li>
               <NavLink to="/about">About</NavLink>
             </li>
@@ -70,21 +106,44 @@ function Navbar() {
             <div className=''>              
               <LuMenu className='text-3xl' 
               onClick={() => setIsNavOpen(!isNavOpen)} />
-
+              {/* <NavLinks /> */}
             </div>
 
               {/* NAV MENU */}
             <div className={isNavOpen ? 'navOpen' : 'navClose'}>
               <div className='absolute top-0 right-0 px-8 py-8'
-                onClick={() => setIsNavOpen (false)}
+                onClick={() => setIsNavOpen(false)}
               >
+                
                 <LuX className='text-3xl' />
               </div>
 
-              
+              <div className='flex flex-col gap-5'>
+                <ul >
+                  <li className='flex flex-col gap-5'>
+                    <NavLink to="/" activeClassName="active">
+                      Home
+                    </NavLink>
 
+                    <NavLink to="/about" activeClassName="active">
+                      About
+                    </NavLink>
+
+                    <NavLink to="/books" activeClassName="active">
+                      Books
+                    </NavLink>
+
+                    <NavLink to="/contact" activeClassName="active">
+                      Contact
+                    </NavLink>
+                    
+                    <NavLink to="/blog" activeClassName="active">
+                      Blog
+                    </NavLink>
+                  </li>
+                </ul>
+              </div>
             </div>            
-
           </div>
 
         </nav>

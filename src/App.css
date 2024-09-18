@@ -46,6 +46,11 @@ align-items: center;
   display: none;
 }
 
+.active {
+  color: white;
+  background: red;
+}
+
 /* .navigation-container {
   position: sticky;
   display: flex;
